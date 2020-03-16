@@ -8,7 +8,7 @@ import csv
 # Part. 2
 #=======================================
 # Read cwb weather data
-cwb_filename = '/home/ee2405/Downloads/sample_input.csv'
+cwb_filename = '/home/ee2405/Downloads/106061106.csv'
 data = []
 header = []
 with open(cwb_filename) as csvfile:
@@ -32,7 +32,7 @@ if (len(target_data) >=1):
    xmax = max(temp)
    xmin = min(temp)
    r1=float(xmax)-float(xmin)
-else: r1="'None'"
+else: r1="'None'" 
 # Retrive ten data points from the beginning.
 
 target_data = data[:10]
